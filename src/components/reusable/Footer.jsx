@@ -6,6 +6,7 @@ import LN from "@/public/assets/reusable/Frame 35630.svg";
 import IN from "@/public/assets/reusable/Frame 35628.svg";
 import TW from "@/public/assets/reusable/Frame 35627.svg";
 import FB from "@/public/assets/reusable/Frame 35626.svg";
+import Link from "next/link";
 
 const linkedInUrl = "";
 const instagramUrl = "";
@@ -18,12 +19,12 @@ const Footer = () => {
       <div className="w-full h-[1px] bg-slate-200 mt-[60px]" />
 
       <div className="mt-10 mb-10 flex justify-between items-center">
-        <div className="flex items-center gap-1">
+        <Link href={"/"} className="flex items-center gap-1">
           <Image src={Icon} alt="logo" className="w-[32px] h-[32px]" />
           <p className="text-mainBlue text-[26px] font-normal leading-7">
             Fynda
           </p>
-        </div>
+        </Link>
 
         <div className="flex gap-10">
           <p className="text-center text-slate-950 text-xl font-medium leading-7 cursor-pointer">
