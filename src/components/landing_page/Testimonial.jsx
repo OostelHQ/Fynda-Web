@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
 
 import Image from "next/image";
 import WhyImage from "@/public/assets/landing_page/Testimonial.svg";
-import DownloadStores from "./DownloadStores";
-import Apple from "@/public/assets/landing_page/Apple Dark.svg";
-import PlayStore from "@/public/assets/landing_page/PlayStore Dark.svg";
+import Client from "@/public/assets/landing_page/Client Image.svg";
+import Stars from "@/public/assets/landing_page/Stars.svg";
 
+import Left from "@/public/assets/landing_page/Left Arrow.svg";
+import Right from "@/public/assets/landing_page/Right Arrow.svg";
 
 const Testimonial = () => {
   return (
@@ -15,30 +16,37 @@ const Testimonial = () => {
           Testimonials
         </p>
         <p className="text-slate-950 text-xl font-normal leading-7 mt-5">
-          Book with ease, thanks to our seamless booking, straightforward
-          booking process, secure payments, and personalized roommate matching –
-          because your journey deserves the best.
+          “Explore and effortlessly secure your ideal hostel experience and find
+          the perfect accommodation for your journey in just a few clicks.”
         </p>
-        <div className="mt-10 flex items-center gap-5">
-          <DownloadStores
-            image={Apple}
-            header={"APPLE APP STORE"}
-            ratings={"3.9"}
-            text={"(200+ ratings)"}
-            dark={true}
-          />
-          <DownloadStores
-            image={PlayStore}
-            header={"GOOGLE PLAY STORE"}
-            ratings={"4.6"}
-            text={"(200+ ratings)"}
-            dark={true}
-          />
-        </div>
-      </div>
-      <Image src={WhyImage} alt="man" className="w-[50%] h-auto"/>
-    </div>
-  )
-}
+        <div className="mt-[29px] flex gap-3 items-start sm:w-full">
+            <Image src={Client} alt="client" className="w-[15%] "/>
 
-export default Testimonial
+            <div className="flex flex-col justify-between items-start">
+              <p className="text-center text-slate-950 text-xl font-medium leading-10">
+                Emmanuel Babalola
+              </p>
+              <p className="text-slate-950 text-base font-normal leading-loose">
+                FUNAAB APC HOC
+              </p>
+            </div>
+            <Image src={Stars} alt="client" className="w-[30%] sm:w-[20%] sm:mt-3"/>
+          </div>
+
+          <div className="mt-[5%]" />
+
+          <div className="flex gap-[20px] sm:justify-center">
+            <div>
+              <Image src={Left} alt="arrow" className="cursor-pointer" />
+            </div>
+            <div>
+              <Image src={Right} alt="arrow" className="cursor-pointer" />
+            </div>
+          </div>
+      </div>
+      <Image src={WhyImage} alt="man" className="w-[50%] h-auto" />
+    </div>
+  );
+};
+
+export default Testimonial;
