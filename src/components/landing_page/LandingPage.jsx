@@ -1,14 +1,26 @@
 import React from 'react'
 
-import Nav from '../reusable/Nav'
+
 import Banner from './Banner'
+import Accomodation from './Accomodation'
+import Roommate from './Roommate'
+import Why from './Why'
+import Testimonial from './Testimonial'
+import Download from './Download'
+import Footer from '../reusable/Footer'
 
 
 const LandingPage = () => {
   return (
-    <div className='bg-mainBlue flex flex-col'>
-      <Nav />
+    <div className='bg-white flex flex-col'>
+      
       <Banner />
+      <Accomodation />
+      <Roommate />
+      <Why />
+      <Testimonial />
+      <Download />
+      <Footer />
     </div>
   )
 }
