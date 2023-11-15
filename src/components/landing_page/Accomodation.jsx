@@ -9,15 +9,15 @@ import Security from "@/public/assets/landing_page/Security Card.svg";
 
 const Accomodation = () => {
   return (
-    <div className="px-[15%] bg-white flex flex-col mb-12">
-      <p className="mt-32 text-slate-950 text-6xl font-bold leading-[88px]">
+    <div className="px-[15%] sm:px-[5%] bg-white flex flex-col mb-12">
+      <p className="mt-32 text-slate-950 sm:text-[52px] sm:text-center text-6xl font-bold leading-[88px]">
         Accomodation
       </p>
-      <p className="opacity-50 text-slate-950 text-[32px] font-semibold leading-[56px]">
+      <p className="opacity-50 text-slate-950 text-[32px] sm:text-center sm:text-[20px] font-semibold leading-[56px]">
         Where comfort meets convenience.
       </p>
-      <div className="mt-24 flex gap-32">
-        <div className="flex flex-col items-center rounded-[50px] overflow-hidden h-[600px] bg-mainBlue pt-16 w-[50%]">
+      <div className="mt-24 flex sm:flex-col sm:gap-16 gap-32">
+        <div className="flex flex-col items-center rounded-[50px] sm:w-full sm:h-[580px] overflow-hidden h-[600px] bg-mainBlue pt-16 w-[50%]">
           <Image
             src={Telescope}
             alt="Telescope"
@@ -30,8 +30,8 @@ const Accomodation = () => {
           <Image src={Uno} alt="phone" className="w-[50%] mt-28 object-cover"/>
         </div>
 
-        <div className="flex flex-col justify-between">
-          <div className="bg-deepBlue flex flex-col items-center rounded-[50px] h-[270px] pt-10 w-[90%]">
+        <div className="flex flex-col sm:gap-16 justify-between">
+          <div className="bg-deepBlue flex flex-col sm:w-full items-center rounded-[50px] h-[270px] pt-10 w-[90%]">
             <Image
               src={Message}
               alt="message"
@@ -42,7 +42,7 @@ const Accomodation = () => {
             </p>
           </div>
 
-          <div className="bg-lightPurple flex flex-col items-center rounded-[50px] h-[270px] pt-10 w-[90%]">
+          <div className="bg-lightPurple flex sm:w-full flex-col items-center rounded-[50px] h-[270px] pt-10 w-[90%]">
             <Image
               src={Security}
               alt="message"

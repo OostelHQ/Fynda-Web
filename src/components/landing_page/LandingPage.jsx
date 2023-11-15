@@ -16,7 +16,7 @@ const LandingPage = () => {
       <Roommate />
       <Why />
       <Testimonial />
-      <div className="px-[15%] mt-40 mb-40">
+      <div className="px-[15%] sm:px-[5%] mt-40 mb-40">
         <Download />
       </div>
       <Footer />
