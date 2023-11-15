@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React from "react";
 import Image from "next/image";
@@ -6,17 +6,20 @@ import Icon from "@/public/assets/reusable/Frame.svg";
 import Link from "next/link";
 import Button from "../reusable/Button";
 
+import { FaArrowLeft, FaChevronRight } from "react-icons/fa6";
+
 import LN from "@/public/assets/reusable/Frame 35630.svg";
 import IN from "@/public/assets/reusable/Frame 35628.svg";
 import TW from "@/public/assets/reusable/Frame 35627.svg";
 import FB from "@/public/assets/reusable/Frame 35626.svg";
 
+import Splash from "@/public/assets/get_started/main.svg";
+import Register from "@/public/assets/get_started/main-1.svg";
 
 const linkedInUrl = "";
 const instagramUrl = "";
 const facebookUrl = "";
 const twitterUrl = "";
-
 
 const GetStarted = () => {
   return (
@@ -29,7 +32,7 @@ const GetStarted = () => {
           </p>
         </Link>
 
-        <p className="pr-[50%] mt-36 text-slate-950 text-6xl font-bold leading-[78px]">
+        <p className="pr-[50%] mt-32 text-slate-950 text-6xl font-bold leading-[78px]">
           We’re Coming Very Soon...
         </p>
         <p className="opacity-80 pr-[40%] text-slate-950 text-xl font-normal mt-5 leading-7">
@@ -49,20 +52,26 @@ const GetStarted = () => {
           />
           <Button
             style={
-              " text-white text-xl h-[50px] font-normal text-center leading-7 px-4 py-3 bg-mainBlue rounded justify-start items-start gap-2.5 inline-flex"
+              " text-white text-xl h-[50px] font-normal text-center leading-7 px-4 py-3 bg-mainBlue rounded items-start gap-2.5 inline-flex"
             }
             destination={"/get-started"}
           >
-            Submit
+            <div className="flex justify-between items-center gap-2">
+              <p>Submit</p>
+              <FaChevronRight />
+            </div>
           </Button>
         </div>
 
-        <div className="flex gap-5 mt-3 cursor-pointer" onClick={() => {
+        <div
+          className="flex items-center gap-2 mt-3 cursor-pointer"
+          onClick={() => {
             window.location.href = "/";
-        }}>
+          }}
+        >
+          <FaArrowLeft fill="#064997" />
           <p className="text-sky-800 text-xl font-normal leading-7">Go back</p>
         </div>
-
 
         <div className="flex gap-5 mt-24">
           <a href={linkedInUrl} target="_blank">
@@ -80,7 +89,10 @@ const GetStarted = () => {
         </div>
       </div>
 
-      <div className="w-[40%] h-[100vh] bg-mainBlue"></div>
+      <div className="w-[40%] h-[100vh] bg-mainBlue flex justify-center gap-10 items-center">
+        <Image src={Splash} alt="splash" className="w-[35%] h-auto"/>
+        <Image src={Register} alt="register" className="w-[35%] h-auto" />
+      </div>
     </div>
   );
 };
