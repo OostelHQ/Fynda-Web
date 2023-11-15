@@ -16,6 +16,8 @@ import FB from "@/public/assets/reusable/Frame 35626.svg";
 import Splash from "@/public/assets/get_started/main.svg";
 import Register from "@/public/assets/get_started/main-1.svg";
 
+import Fynda from "@/public/assets/get_started/Vector.svg";
+
 const linkedInUrl = "";
 const instagramUrl = "";
 const facebookUrl = "";
@@ -89,9 +91,10 @@ const GetStarted = () => {
         </div>
       </div>
 
-      <div className="w-[40%] h-[100vh] bg-mainBlue flex justify-center gap-10 items-center">
-        <Image src={Splash} alt="splash" className="w-[35%] h-auto"/>
-        <Image src={Register} alt="register" className="w-[35%] h-auto" />
+      <div className="w-[40%] h-[100vh] bg-mainBlue flex justify-center gap-10 items-center relative">
+        <Image src={Fynda} alt="Fynda" className="w-[100vw] h-[100vh] absolute top-0 left-0 object-cover"/>
+        <Image src={Splash} alt="splash" className="w-[35%] h-auto z-10"/>
+        <Image src={Register} alt="register" className="w-[35%] h-auto z-10" />
       </div>
     </div>
   );

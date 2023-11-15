@@ -31,7 +31,7 @@ const Download = () => {
           />
         </div>
       </div>
-      <Image src={Uno} alt="phone" className="w-[30%] sm:w-[75%]" />
+      <Image src={Uno} alt="phone" className="w-[30%] sm:hidden" />
     </div>
   );
 };
