@@ -8,14 +8,14 @@ import Message from "@/public/assets/landing_page/Device Message.svg";
 
 const Roommate = () => {
   return (
-    <div className="px-[15%] sm:px-[5%] bg-white flex flex-col mb-48">
-      <p className="mt-32 text-slate-950 sm:text-[52px] sm:text-center text-6xl font-bold leading-[88px]">
+    <div className="px-[15%] sm:px-[5%] flex flex-col mb-48">
+      <p className="mt-24 text-slate-950 sm:text-[52px] sm:text-center text-6xl font-bold leading-[88px]">
         Roommate
       </p>
       <p className="opacity-50 sm:text-center sm:text-[20px] text-slate-950 text-[32px] font-semibold leading-[56px]">
         Compatible room-partner search made easy.
       </p>
-      <div className="mt-24 sm:gap-16 flex gap-32 sm:flex-col">
+      <div className="mt-16 sm:gap-12 flex gap-24 sm:flex-col">
         <div className="flex flex-col items-center rounded-[50px] sm:w-full h-[600px] pb-36 bg-lightBlue pt-10 w-[40%]">
           <Image
             src={Telescope}

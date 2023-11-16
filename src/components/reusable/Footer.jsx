@@ -26,19 +26,24 @@ const Footer = () => {
           </p>
         </Link>
 
-        <div className="flex gap-10 sm:mt-10">
-          <p className="text-center text-slate-950 text-xl font-medium leading-7 cursor-pointer">
+        <div className="flex sm:flex-col gap-10 sm:mt-10">
+          <div className="flex gap-10">
+          <p className="text-center text-slate-950 text-[20px] sm:text-[16px] font-medium leading-7 cursor-pointer">
             Testimonial
           </p>
-          <p className="text-center text-slate-950 text-xl font-medium leading-7 cursor-pointer">
+          <p className="text-center text-slate-950 text-[20px] sm:text-[16px] font-medium leading-7 cursor-pointer">
             FAQs
           </p>
-          <p className="text-center text-slate-950 text-xl font-medium leading-7 cursor-pointer">
+          <p className="text-center text-slate-950 text-[20px] sm:text-[16px] font-medium leading-7 cursor-pointer">
             Terms of Service
           </p>
-          <p className="text-center text-slate-950 text-xl font-medium leading-7 cursor-pointer">
+          </div>
+          
+          <p className="text-center text-slate-950 text-[20px] sm:text-[16px] font-medium leading-7 cursor-pointer">
             Privacy Policy
           </p>
+
+
         </div>
       </div>
 
@@ -57,9 +62,9 @@ const Footer = () => {
             <Image src={FB} alt="Facebook" />
           </a>
         </div>
-        <div className=" mt-10 text-slate-400 text-base font-normal leading-loose mb-10">
+        <p className=" mt-10 text-slate-400 text-base font-normal leading-loose mb-10">
           © 2023 Fynda. All rights reserved.
-        </div>
+        </p>
         <div className="flex gap-5 sm:hidden">
           <a href={linkedInUrl} target="_blank">
             <Image src={LN} alt="LinkedIn" />

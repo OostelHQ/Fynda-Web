@@ -4,11 +4,14 @@ import Uno from "@/public/assets/landing_page/Main Phone.svg";
 import DownloadStores from "./DownloadStores";
 import Apple from "@/public/assets/landing_page/Apple.svg";
 import PlayStore from "@/public/assets/landing_page/PlayStore.svg";
+import Vector from "@/public/assets/reusable/Vector.svg";
 
 const Download = () => {
   return (
     <div className="bg-deepBlue rounded-[40px] sm:items-center sm:flex-col sm:h-[1000px] h-[500px] w-full flex relative justify-around">
-      <div className="w-[50%] flex flex-col sm:w-full sm:px-[15%]">
+      <Image src={Vector} alt="vector" className="absolute top-0 left-0 w-full h-full object-cover"/>
+      
+      <div className="w-[50%] flex flex-col sm:w-full z-10 sm:px-[15%]">
         <p className="mt-32 sm:mt-10 text-white sm:text-center sm:text-[52px] text-6xl font-bold leading-[88px]">
           Download App
         </p>
@@ -31,7 +34,7 @@ const Download = () => {
           />
         </div>
       </div>
-      <Image src={Uno} alt="phone" className="w-[30%] sm:hidden" />
+      <Image src={Uno} alt="phone" className="w-[30%] z-10 sm:hidden" />
     </div>
   );
 };

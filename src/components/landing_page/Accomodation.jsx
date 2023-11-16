@@ -9,14 +9,14 @@ import Security from "@/public/assets/landing_page/Security Card.svg";
 
 const Accomodation = () => {
   return (
-    <div className="px-[15%] sm:px-[5%] bg-white flex flex-col mb-12">
+    <div className="px-[15%] sm:px-[5%] flex flex-col">
       <p className="mt-32 text-slate-950 sm:text-[52px] sm:text-center text-6xl font-bold leading-[88px]">
         Accomodation
       </p>
       <p className="opacity-50 text-slate-950 text-[32px] sm:text-center sm:text-[20px] font-semibold leading-[56px]">
         Where comfort meets convenience.
       </p>
-      <div className="mt-24 flex sm:flex-col sm:gap-16 gap-32">
+      <div className="mt-16 flex sm:flex-col sm:gap-12 gap-24">
         <div className="flex flex-col items-center rounded-[50px] sm:w-full sm:h-[580px] overflow-hidden h-[600px] bg-mainBlue pt-16 w-[50%]">
           <Image
             src={Telescope}

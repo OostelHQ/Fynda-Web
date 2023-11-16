@@ -21,7 +21,7 @@ const Banner = () => {
       <div className="absolute top-0 left-0">
         <Nav />
         <div className="mt-24 flex gap-16 justify-between px-[15%] sm:px-[5%] sm:flex-col mb-32">
-          <div className="w-[50%] sm:w-full flex flex-col">
+          <div className="w-[45%] sm:w-full flex flex-col h-[70vh]">
             <p className=" text-white text-[92px] sm:text-[52px] sm:text-center font-bold leading-[96px]">
               Relax, Your Comfort Found!
             </p>
@@ -46,7 +46,7 @@ const Banner = () => {
             </div>
           </div>
 
-          <div className="relative sm:w-full w-[40%]">
+          <div className="relative sm:w-full w-[40%] h-[70vh] sm:hidden">
             <Image src={Duo} alt="duo image" className="h-[70vh] -z-10" />
             <Image
               src={Uno}
