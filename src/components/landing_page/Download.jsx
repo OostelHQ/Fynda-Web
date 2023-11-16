@@ -8,14 +8,14 @@ import Vector from "@/public/assets/reusable/Vector.svg";
 
 const Download = () => {
   return (
-    <div className="bg-deepBlue rounded-[40px] sm:items-center sm:flex-col sm:h-[1000px] h-[500px] w-full flex relative justify-around">
+    <div className="bg-mainBlue rounded-[40px] sm:items-center sm:flex-col sm:h-[1000px] h-[500px] w-full flex relative justify-around">
       <Image src={Vector} alt="vector" className="absolute top-0 left-0 w-full h-full object-cover"/>
       
-      <div className="w-[50%] flex flex-col sm:w-full z-10 sm:px-[15%]">
-        <p className="mt-32 sm:mt-10 text-white sm:text-center sm:text-[52px] text-6xl font-bold leading-[88px]">
+      <div className="w-[50%] flex flex-col sm:w-full justify-start z-10 sm:px-[15%]">
+        <p className="mt-32 sm:mt-10 text-white sm:text-[52px] text-6xl  sm:leading-[52px] sm:text-center text-[80px] font-bold leading-[88px]">
           Download App
         </p>
-        <p className="text-white text-xl sm:mt-10 sm:text-center sm:text-[20px] font-normal leading-7 mt-5">
+        <p className="text-white text-xl sm:text-[16px] sm:mt-10 sm:text-center sm:leading-[28px] font-normal leading-7 mt-5">
           Join Fynda today and embark on a stress-free adventure in finding your
           ideal student accommodation
         </p>
@@ -34,7 +34,7 @@ const Download = () => {
           />
         </div>
       </div>
-      <Image src={Uno} alt="phone" className="w-[30%] z-10 sm:hidden" />
+      <Image src={Uno} alt="phone" className="w-[30%] z-10 sm:w-[80%]" />
     </div>
   );
 };

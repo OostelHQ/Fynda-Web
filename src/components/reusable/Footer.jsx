@@ -26,7 +26,7 @@ const Footer = () => {
           </p>
         </Link>
 
-        <div className="flex sm:flex-col gap-10 sm:mt-10">
+        <div className="flex sm:flex-col gap-10 sm:gap-5 sm:mt-10">
           <div className="flex gap-10">
           <p className="text-center text-slate-950 text-[20px] sm:text-[16px] font-medium leading-7 cursor-pointer">
             Testimonial
@@ -48,7 +48,7 @@ const Footer = () => {
       </div>
 
       <div className="flex sm:flex-col justify-between items-center">
-        <div className="flex gap-5 sm:flex hidden">
+        <div className="flex gap-5">
           <a href={linkedInUrl} target="_blank">
             <Image src={LN} alt="LinkedIn" />
           </a>
@@ -62,10 +62,10 @@ const Footer = () => {
             <Image src={FB} alt="Facebook" />
           </a>
         </div>
-        <p className=" mt-10 text-slate-400 text-base font-normal leading-loose mb-10">
+        <p className=" mt-10 text-slate-400 sm:text-[16px] sm:leading-[28px] text-base font-normal leading-loose mb-10">
           © 2023 Fynda. All rights reserved.
         </p>
-        <div className="flex gap-5 sm:hidden">
+        <div className="flex gap-5 hidden">
           <a href={linkedInUrl} target="_blank">
             <Image src={LN} alt="LinkedIn" />
           </a>
