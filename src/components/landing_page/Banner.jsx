@@ -1,3 +1,5 @@
+"use client"
+
 import React from "react";
 
 import Image from "next/image";
@@ -7,8 +9,9 @@ import DownloadStores from "./DownloadStores";
 import Nav from "../reusable/Nav";
 import Apple from "@/public/assets/landing_page/Apple.svg";
 import PlayStore from "@/public/assets/landing_page/PlayStore.svg";
-
 import DesktopVector from "@/public/assets/landing_page/Vector Desktop.svg";
+
+import { motion } from "framer-motion";
 
 const Banner = () => {
   return (
@@ -20,7 +23,10 @@ const Banner = () => {
       />
       <div className="absolute top-0 left-0">
         <Nav />
-        <div className="mt-28 sm:mt-10 flex gap-16 justify-between px-[15%] sm:px-[5%] h-[70vh] sm:h-auto sm:flex-col">
+
+
+
+        <motion.div animate={{x: 100}} initial={false} className="mt-28 sm:mt-10 flex gap-16 justify-between px-[15%] sm:px-[5%] h-[70vh] sm:h-auto sm:flex-col">
           <div className="w-[45%] sm:w-full flex flex-col ">
             <p className=" text-white text-[92px] sm:text-[52px] sm:text-center font-bold sm:leading-[52px] leading-[96px]">
               Relax, Your Comfort Found!
@@ -54,7 +60,12 @@ const Banner = () => {
               className="absolute w-[60%] left-24 sm:left-16 -top-5"
             />
           </div>
-        </div>
+
+
+        </motion.div>
+
+
+
       </div>
     </div>
   );

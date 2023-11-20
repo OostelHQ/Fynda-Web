@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 
 import Image from "next/image";
@@ -7,17 +9,29 @@ import Telescope from "@/public/assets/landing_page/Microscope.svg";
 import Message from "@/public/assets/landing_page/Message.svg";
 import Security from "@/public/assets/landing_page/Security Card.svg";
 
+import { motion } from "framer-motion";
+
 const Accomodation = () => {
   return (
-    <div className="px-[15%] sm:px-[5%] flex flex-col">
-      <p className="mt-24 text-slate-950 sm:text-[40px] sm:leading-[52px] sm:text-center text-[80px] font-bold leading-[88px]">
+    <motion.div className="px-[15%] sm:px-[5%] flex flex-col">
+      <motion.p
+        animate={{ x: 100 }}
+        transition={{ duration: 0.5 }}
+        className="mt-24 text-slate-950 sm:text-[40px] sm:leading-[52px] sm:text-center text-[80px] font-bold leading-[88px]"
+      >
         Accomodation
-      </p>
+      </motion.p>
       <p className="opacity-50 text-slate-950 text-[32px] sm:text-center sm:text-[20px] font-semibold sm:leading-[36px] leading-[56px]">
         Where comfort meets convenience.
       </p>
       <div className="mt-12 flex sm:flex-col sm:gap-8 gap-16">
-        <div className="flex flex-col items-center sm:pt-8 rounded-[50px] sm:rounded-[32px] sm:w-full sm:h-[390px] overflow-hidden h-[550px] bg-mainBlue pt-12 w-[50%]">
+        <motion.div
+          animate={{
+            translate: [-100, 0],
+          }}
+          transition={{ duration: 0.8 }}
+          className="flex flex-col items-center sm:pt-8 rounded-[50px] sm:rounded-[32px] sm:w-full sm:h-[390px] overflow-hidden h-[550px] bg-mainBlue pt-12 w-[50%]"
+        >
           <Image
             src={Telescope}
             alt="Telescope"
@@ -27,8 +41,12 @@ const Accomodation = () => {
             Finding your new home just got easier. Explore a myriad of options
             effortlessly through the Fynda App.
           </p>
-          <Image src={Uno} alt="phone" className="w-[60%] sm:w-[80%] sm:mt-8 mt-20 object-cover"/>
-        </div>
+          <Image
+            src={Uno}
+            alt="phone"
+            className="w-[60%] sm:w-[80%] sm:mt-8 mt-20 object-cover"
+          />
+        </motion.div>
 
         <div className="flex flex-col sm:gap-8 justify-between">
           <div className="bg-deepBlue flex flex-col sm:w-full sm:rounded-[32px] items-center rounded-[50px] h-[250px] sm:h-[270px] pt-10 w-[100%]">
@@ -54,7 +72,7 @@ const Accomodation = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

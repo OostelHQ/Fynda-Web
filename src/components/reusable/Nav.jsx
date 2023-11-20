@@ -65,7 +65,7 @@ const Nav = () => {
           </Button>
 
           <p className=" mt-10 text-slate-950 text-base text-center font-normal leading-loose mb-10">
-            © 2023 Fynda. All rights reserved.
+            ©{new Date().getFullYear()} Fynda. All rights reserved.
           </p>
         </div>
       </div>
