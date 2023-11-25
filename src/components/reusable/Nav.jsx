@@ -18,7 +18,7 @@ const Nav = () => {
   };
 
   return (
-    <div className={`flex mt-10 px-[10%] sm:px-[5%] w-[100vw] items-center justify-between relative`}>
+    <div className={`flex mt-10 px-[15%] sm:px-[5%] md:px-[15%] w-full items-center justify-between relative`}>
       <Link href={"/"} className="flex items-center gap-1">
         <Image src={Icon} alt="logo" className="w-[32px] h-[32px]" />
         <p className="text-white text-[26px] font-normal leading-7">Fynda</p>

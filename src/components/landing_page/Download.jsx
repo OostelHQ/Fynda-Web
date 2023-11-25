@@ -8,18 +8,18 @@ import Vector from "@/public/assets/reusable/Vector.svg";
 
 const Download = () => {
   return (
-    <div className="bg-mainBlue rounded-[40px] sm:items-center sm:flex-col sm:h-[900px] h-[500px] w-full flex relative">
-      <Image src={Vector} alt="vector" className="absolute top-0 left-0 w-full h-full object-cover"/>
+    <div className="bg-deepBlue rounded-[60px] sm:items-center md:items-center md:flex-col sm:flex-col sm:h-[770px] h-[500px] w-full flex relative overflow-clip ">
+      <Image src={Vector} alt="vector" className="absolute -top-[60vh] left-0 w-[2000px] h-[1000px] object-cover"/>
       
-      <div className="w-[50%] flex flex-col sm:w-[100%] justify-start sm:items-center items-start z-10 sm:pl-0 pl-[5%]">
-        <p className="mt-20 sm:mt-16 text-white sm:text-[52px] text-6xl sm:leading-[52px] sm:text-center text-[80px] font-bold leading-[88px]">
+      <div className="w-[80%] flex flex-col sm:w-full md:w-full justify-start sm:items-center items-start z-10 sm:px-[10%] px-[10%]">
+        <p className="mt-24 sm:mt-16 text-white sm:text-[40px] text-[56px] sm:leading-[52px] sm:text-center sm:w-full font-bold leading-[88px]">
           Download App
         </p>
-        <p className="text-white text-xl sm:text-[16px] sm:mt-10 sm:text-center sm:leading-[28px] font-normal leading-7 mt-5">
+        <p className="text-white pr-[50%] sm:pr-0 text-xl sm:text-[16px] sm:mt-5 sm:text-center sm:leading-[28px] font-normal leading-7 mt-5">
           Join Fynda today and embark on a stress-free adventure in finding your
           ideal student accommodation
         </p>
-        <div className="flex sm:flex-col sm:w-full sm:px-[5%] gap-5 sm:mt-10 mt-5 items-center">
+        <div className="flex sm:flex-col sm:w-full gap-5 mt-10 items-center">
           <DownloadStores
             image={Apple}
             header={"APPLE APP STORE"}
@@ -34,7 +34,9 @@ const Download = () => {
           />
         </div>
       </div>
-      <Image src={Uno} alt="phone" className="w-[20vw] h-[400px] sm:h-[350px] sm:bottom-0 z-10 sm:w-[60vw] sm:right-[15vw] bottom-0 absolute right-[5vw]" />
+
+
+      <Image src={Uno} alt="phone" className="w-[30vw] h-[400px] sm:h-[350px] z-10 sm:w-[60vw] sm:right-[15vw] sm:-bottom-6 bottom-0 absolute right-[3%]" />
     </div>
   );
 };
