@@ -39,7 +39,7 @@ const Nav = () => {
       />
 
       <div
-        className={`sm:flex sm:flex-col z-30 hidden ${
+        className={`sm:flex sm:flex-col overscroll-y-none z-30 hidden ${
           open ? "sm:block left-0" : "sm:hidden -left-[100%]"
         } fixed overscroll-y-auto top-0 transform ease-linear duration-500 w-[100%] bg-white h-full shadow-md px-[5%] py-[5%]`}
       >
@@ -54,7 +54,7 @@ const Nav = () => {
           <BiX size={"32px"} className="text-black" onClick={toggle} />
         </div>
 
-        <div className="mt-10 flex-col h-[80vh] justify-between flex">
+        <div className="mt-10 flex-col h-[100vh] justify-between flex">
           <Button
             style={
               "w-full py-3 text-center text-white bg-mainBlue rounded-[4px]"
@@ -64,7 +64,7 @@ const Nav = () => {
             Get Started
           </Button>
 
-          <p className=" mt-10 text-slate-950 text-base text-center font-normal leading-loose mb-10">
+          <p className=" mt-10 text-slate-400 sm:text-[16px] sm:leading-[28px] text-center text-base font-normal leading-loose mb-10">
             ©{new Date().getFullYear()} Fynda. All rights reserved.
           </p>
         </div>

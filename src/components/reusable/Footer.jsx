@@ -18,7 +18,7 @@ const Footer = () => {
     <div className="px-[15%] sm:px-[5%]">
       <div className="w-full h-[1px] bg-slate-200 mt-[60px]" />
 
-      <div className="mt-10 mb-10 sm:flex-col flex justify-between items-center">
+      <div className="mt-10 mb-10 sm:flex-col md:flex-col flex justify-between items-center">
         <Link href={"/"} className="flex items-center gap-1">
           <Image src={Icon} alt="logo" className="w-[32px] h-[32px]" />
           <p className="text-mainBlue text-[26px] font-normal leading-7">
@@ -26,29 +26,26 @@ const Footer = () => {
           </p>
         </Link>
 
-        <div className="flex sm:flex-col gap-10 sm:gap-5 sm:mt-10">
-          <div className="flex gap-10">
-          <p className="text-center text-slate-950 text-[20px] sm:text-[16px] font-medium leading-7 cursor-pointer">
-            Testimonial
-          </p>
-          <p className="text-center text-slate-950 text-[20px] sm:text-[16px] font-medium leading-7 cursor-pointer">
-            FAQs
-          </p>
-          <p className="text-center text-slate-950 text-[20px] sm:text-[16px] font-medium leading-7 cursor-pointer">
-            Terms of Service
-          </p>
+        <div className="flex sm:flex-col gap-10 sm:gap-5 md:gap-5 md:mt-10 md:flex sm:mt-10">
+          <div className="flex gap-10 sm:gap-5 md:gap-5">
+            <p className="text-center text-slate-950 text-[20px] sm:text-[16px] font-medium leading-7 cursor-pointer">
+              Testimonial
+            </p>
+            <p className="text-center text-slate-950 text-[20px] sm:text-[16px] font-medium leading-7 cursor-pointer">
+              FAQs
+            </p>
+            <p className="text-center text-slate-950 text-[20px] sm:text-[16px] font-medium leading-7 cursor-pointer">
+              Terms of Service
+            </p>
           </div>
-          
           <p className="text-center text-slate-950 text-[20px] sm:text-[16px] font-medium leading-7 cursor-pointer">
             Privacy Policy
           </p>
-
-
         </div>
       </div>
 
-      <div className="flex sm:flex-col justify-between items-center">
-        <div className="flex gap-5">
+      <div className="flex sm:flex-col md:flex-col justify-between items-center">
+        <div className="sm:flex gap-5 hidden md:flex ">
           <a href={linkedInUrl} target="_blank">
             <Image src={LN} alt="LinkedIn" />
           </a>
@@ -62,10 +59,12 @@ const Footer = () => {
             <Image src={FB} alt="Facebook" />
           </a>
         </div>
+
         <p className=" mt-10 text-slate-400 sm:text-[16px] sm:leading-[28px] text-base font-normal leading-loose mb-10">
           © 2023 Fynda. All rights reserved.
         </p>
-        <div className="flex gap-5 hidden">
+
+        <div className="flex gap-5 sm:hidden md:hidden">
           <a href={linkedInUrl} target="_blank">
             <Image src={LN} alt="LinkedIn" />
           </a>

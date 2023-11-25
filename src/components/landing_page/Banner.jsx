@@ -19,7 +19,7 @@ const Banner = () => {
       <Image
         src={DesktopVector}
         alt="desktop vectors"
-        className="w-[100vw] h-[110vh] md:h-[145vh] sm:h-[150vh] object-cover"
+        className="w-[100vw] h-[110vh] md:h-[145vh] sm:h-[145vh] object-cover"
       />
       <div className="absolute top-0 left-0">
         <Nav />

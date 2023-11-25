@@ -56,7 +56,7 @@ const Testimonial = () => {
     <div className="flex sm:flex-col md:flex-col justify-between px-[15%] sm:px-[5%] gap-20 sm:gap-10 mt-32 sm:mt-16">
       <div className="w-[70%] sm:w-full md:w-full flex flex-col"> 
         <p className="text-slate-950 text-6xl sm:text-[40px] sm:leading-[52px] sm:text-center md:text-center font-bold leading-[88px]">
-          Recommendations
+          Endorsements
         </p>
         <AnimatePresence>
           <motion.div
