@@ -54,8 +54,8 @@ const Testimonial = () => {
 
   return (
     <div className="flex sm:flex-col md:flex-col justify-between px-[15%] sm:px-[5%] gap-20 sm:gap-10 mt-32 sm:mt-16">
-      <div className="w-[70%] sm:w-full md:w-full flex flex-col"> 
-        <p className="text-slate-950 text-6xl sm:text-[40px] sm:leading-[52px] sm:text-center md:text-center font-bold leading-[88px]">
+      <div className="w-[70%] sm:w-full md:w-full flex flex-col">
+        <p className="mt-24 text-slate-950 sm:text-[40px] md:text-[60px] md:text-center sm:leading-[52px] sm:text-center text-[80px] font-bold leading-[88px]">
           Endorsements
         </p>
         <AnimatePresence>
@@ -109,7 +109,11 @@ const Testimonial = () => {
           </div>
         </div>
       </div>
-      <Image src={WhyImage} alt="man" className="w-[50%] sm:w-full md:w-full h-auto" />
+      <Image
+        src={WhyImage}
+        alt="man"
+        className="w-[50%] sm:w-full md:w-full h-auto"
+      />
     </div>
   );
 };
