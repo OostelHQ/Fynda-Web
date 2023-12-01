@@ -9,9 +9,9 @@ import FB from "@/public/assets/reusable/Frame 35626.svg";
 import Link from "next/link";
 
 const linkedInUrl = "";
-const instagramUrl = "";
-const facebookUrl = "";
-const twitterUrl = "";
+const instagramUrl = "https://instagram.com/fyndacare?igshid=OGY3MTU3OGY1Mw==";
+const facebookUrl = "https://www.facebook.com/FyndaCare";
+const twitterUrl = "https://x.com/FyndaCare?t=JdeAxnmteQ2uh8d6_NPuZA&s=09";
 
 const Footer = () => {
   return (
@@ -61,7 +61,7 @@ const Footer = () => {
         </div>
 
         <p className=" mt-10 text-slate-400 sm:text-[16px] sm:leading-[28px] text-base font-normal leading-loose mb-10">
-          © 2023 Fynda. All rights reserved.
+          © {new Date().getFullYear()} Fynda. All rights reserved.
         </p>
 
         <div className="flex gap-5 sm:hidden md:hidden">
