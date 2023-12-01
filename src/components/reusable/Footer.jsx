@@ -46,9 +46,9 @@ const Footer = () => {
 
       <div className="flex sm:flex-col md:flex-col justify-between items-center">
         <div className="sm:flex gap-5 hidden md:flex ">
-          <a href={linkedInUrl} target="_blank">
+          {/* <a href={linkedInUrl} target="_blank">
             <Image src={LN} alt="LinkedIn" />
-          </a>
+          </a> */}
           <a href={instagramUrl} target="_blank">
             <Image src={IN} alt="Instagram" />
           </a>
@@ -65,9 +65,9 @@ const Footer = () => {
         </p>
 
         <div className="flex gap-5 sm:hidden md:hidden">
-          <a href={linkedInUrl} target="_blank">
+          {/* <a href={linkedInUrl} target="_blank">
             <Image src={LN} alt="LinkedIn" />
-          </a>
+          </a> */}
           <a href={instagramUrl} target="_blank">
             <Image src={IN} alt="Instagram" />
           </a>
