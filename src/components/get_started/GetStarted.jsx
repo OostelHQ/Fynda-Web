@@ -24,6 +24,12 @@ const facebookUrl = "";
 const twitterUrl = "";
 
 const fyndaEmail = "oostel.app@gmail.com";
+const myEmail = "taiwoluwatobilobafestus@gmail.com";
+
+
+function sendMail() {
+  
+}
 
 const GetStarted = () => {
   return (
